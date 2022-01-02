@@ -74,8 +74,6 @@ generate_points_from_grid <- function(xmin, xmax, ymin, ymax, colour_1, colour_2
     unnest(cols = c(data, color))
 }
 
-# Attempt 2 --------------------------------------------------------------------
-
 # Create the data --------------------------------------------------------------
 
 col1 = "#c84c0c" # mario brick main colour
