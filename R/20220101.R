@@ -74,60 +74,6 @@ generate_points_from_grid <- function(xmin, xmax, ymin, ymax, colour_1, colour_2
     unnest(cols = c(data, color))
 }
 
-# Import Google Fonts ----------------------------------------------------------
-
-font_add_google("Press Start 2P", "pressstart")
-
-# Attempt 1 --------------------------------------------------------------------
-
-# Create the data --------------------------------------------------------------
-
-# TODO: Change these colours!
-pink <- "#EC8772"
-red <- "#E43700"
-gold <- "#FFAC00"
-blue <- "#008B9A"
-
-set.seed(1234)
-
-layout_first_row <- tribble(
-  ~xmin, ~xmax, ~ymin, ~ymax, ~colour_2, ~colour_1,
-  
-  0, 1, 1, 3, pink, red)
-
-layout_second_row <- tribble(
-  ~xmin, ~xmax, ~ymin, ~ymax, ~colour_2, ~colour_1,
-  
-  1, 3, 1, 3, blue, orange)
-
-gradient_grid_first_row <- layout_first_row %>%
-  mutate(points = pmap(list(xmin, xmax, ymin, ymax, colour_1, colour_2), generate_points_from_grid, granularity = 500)) %>%
-  select(points) %>%
-  unnest(cols = c(points))
-
-gradient_grid_second_row <- layout_second_row %>%
-  mutate(points = pmap(list(xmin, xmax, ymin, ymax, colour_1, colour_2), generate_points_from_grid, granularity = 500)) %>%
-  select(points) %>%
-  unnest(cols = c(points))
-
-gradient_grid <- bind_rows(
-  gradient_grid_first_row, gradient_grid_second_row)
-
-# Build plot 1 -----------------------------------------------------------------
-
-# "Sunset on the Beach"
-p <- gradient_grid %>%
-  ggplot(aes(x = x, y = y, color = color)) +
-  geom_point(size = 0.1, shape = 15) +
-  scale_color_identity() +
-  theme_void() +
-  coord_fixed()
-
-# Export to PNG
-ggsave(
-  here::here("img/20220101_attempt01.png"),
-  last_plot(), width = 6, height = 6, units = "cm", dpi = 320)
-
 # Attempt 2 --------------------------------------------------------------------
 
 # Create the data --------------------------------------------------------------
@@ -151,8 +97,12 @@ gradient_grid <- layout %>%
 
 # Build plot 1 -----------------------------------------------------------------
 
-# "Mario the Generative Artist"
+# Import Google Fonts
+font_add_google("Press Start 2P", "pressstart")
+
 showtext_auto()
+
+# Build plot
 p <- gradient_grid %>%
   ggplot(aes(x = x, y = y, color = color)) +
   geom_point(size = 4, shape = 15) +
@@ -171,7 +121,7 @@ p <- gradient_grid %>%
 
 # Export to PNG
 ggsave(
-  here::here("img/20220101_attempt02.png"),
+  here::here("img/20220101.png"),
   last_plot(), width = 10, height = 10, units = "cm", dpi = 320)
 
 showtext_auto(FALSE)
