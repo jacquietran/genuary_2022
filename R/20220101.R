@@ -3,6 +3,7 @@
 library(dplyr)
 library(purrr)
 library(tidyr)
+library(showtext)
 library(ggplot2)
 
 # Define custom functions ------------------------------------------------------
@@ -72,6 +73,10 @@ generate_points_from_grid <- function(xmin, xmax, ymin, ymax, colour_1, colour_2
     )) %>%
     unnest(cols = c(data, color))
 }
+
+# Import Google Fonts ----------------------------------------------------------
+
+font_add_google("Press Start 2P", "pressstart")
 
 # Attempt 1 --------------------------------------------------------------------
 
@@ -147,15 +152,26 @@ gradient_grid <- layout %>%
 # Build plot 1 -----------------------------------------------------------------
 
 # "Mario the Generative Artist"
+showtext_auto()
 p <- gradient_grid %>%
   ggplot(aes(x = x, y = y, color = color)) +
   geom_point(size = 4, shape = 15) +
   scale_color_identity() +
+  labs(
+    title = "Mario the Generative Artist",
+    subtitle = "#genuary2022 - Day 1",
+    caption = "@jacquietran") +
   theme_void() +
-  coord_fixed()
+  coord_fixed() +
+  theme(
+    text = element_text(colour = "#5c94fc", family = "pressstart", size = 24),
+    plot.title = element_text(colour = "#FFFFFF"),
+    plot.background = element_rect(fill = "#161c28", colour = "#161c28"),
+    plot.margin = margin(5,0,5,0, unit = "pt"))
 
 # Export to PNG
 ggsave(
   here::here("img/20220101_attempt02.png"),
   last_plot(), width = 10, height = 10, units = "cm", dpi = 320)
 
+showtext_auto(FALSE)
