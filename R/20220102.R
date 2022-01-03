@@ -1,27 +1,12 @@
 # Load libraries ---------------------------------------------------------------
 
-library(magick)
+
 library(dplyr)
 library(ggfx)
 library(showtext)
 library(ggplot2)
 
-# Oddish -----------------------------------------------------------------------
-
-# Image sourced from here: https://pokemondb.net/pokedex/oddish
-
-# Read image into R
-oddish <- image_read(here::here("misc/oddish.jpg"))
-
-oddish_quantized <- image_quantize(oddish, 6)
-
-# Write dithered image out to file
-image_write(
-  oddish_quantized,
-  path = here::here("img/20220102_dithering_approach_01.jpg"),
-  format = "jpg")
-
-# Using {ggfx} -----------------------------------------------------------------
+# Create data ------------------------------------------------------------------
 
 # Set colours
 # Palette from here: https://colorpalettes.net/color-palette-4224/
@@ -73,7 +58,8 @@ font_add_google("Righteous", "righteous")
 
 showtext_auto()
 
-# Build the plot
+# Build the plot ---------------------------------------------------------------
+
 p <- ggplot(
   layer_1, aes(x = x, y = y, colour = colour))
 # Layer 1
@@ -120,7 +106,8 @@ p <- p + theme(
       map_size = 4),
   plot.margin = margin(10,20,10,20, unit = "pt"))
 
-# Export to PNG
+# Export to PNG ----------------------------------------------------------------
+
 ggsave(
   here::here("img/20220102.png"),
   last_plot(), width = 7, height = 3.9375, units = "in", dpi = 600)
