@@ -1,6 +1,5 @@
 # Load libraries ---------------------------------------------------------------
 
-
 library(dplyr)
 library(ggfx)
 library(showtext)
