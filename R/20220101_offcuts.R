@@ -135,7 +135,7 @@ p <- gradient_grid %>%
 
 # Export to PNG
 ggsave(
-  here::here("img/20220101_offcut01.png"),
+  here::here("img/offcuts/20220101_offcut01.png"),
   last_plot(), width = 8, height = 8, units = "cm", dpi = 320)
 
 showtext_auto(FALSE)
