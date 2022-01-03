@@ -68,7 +68,7 @@ ggsave(
   here::here("img/offcuts/20220102_offcut02.png"),
   last_plot(), width = 9, height = 6, units = "in", dpi = 600)
 
-# Offcut 02 --------------------------------------------------------------------
+# Offcut 03 --------------------------------------------------------------------
 
 # Load libraries
 # library(dplyr)
@@ -87,21 +87,139 @@ colour_vector <- c(
 # Create the data
 set.seed(202)
 data_points <- tibble(
-  x = runif(70, min=0, max=5),
-  y = runif(70, min=0, max=5),
-  colour = sample(colour_vector, 70, replace = TRUE),
-  size = runif(70, min=30, max=125))
+  x = runif(80, min=0, max=5),
+  y = runif(80, min=0, max=5),
+  colour = sample(colour_vector, 80, replace = TRUE),
+  size = runif(80, min=30, max=125))
 
 # Build the plot
-p <- ggplot(
-  data_points, aes(x = x, y = y, colour = colour))
+p <- ggplot()
 p <- p + geom_point(
-  shape = 15, fill = data_points$colour,
-  stroke = 0, size = data_points$size)
+  data = data_points, aes(x = x, y = y, colour = colour),
+  shape = 15, stroke = 0, size = data_points$size)
 p <- p + scale_colour_identity()
 p <- p + theme_void()
 
 # Export to PNG
 ggsave(
   here::here("img/offcuts/20220102_offcut03.png"),
+  last_plot(), width = 9, height = 6, units = "in", dpi = 600)
+
+# Offcut 04 --------------------------------------------------------------------
+
+# Load libraries
+# library(dplyr)
+# library(ggfx)
+# library(ggplot2)
+
+# Set colours
+colour_vector <- c(
+  "#FFCDB2",
+  "#FFB4A2",
+  "#E5989B",
+  "#B5838D",
+  "#6D6875")
+
+# Create the data
+set.seed(21572)
+data_points <- tibble(
+  x = runif(100, min=0, max=5),
+  y = runif(100, min=0, max=5),
+  colour = sample(colour_vector, 100, replace = TRUE),
+  size = runif(100, min=30, max=125))
+
+# Build the plot
+p <- ggplot()
+p <- p + ggfx::with_bloom(
+  geom_point(
+  data = data_points, aes(x = x, y = y, colour = colour),
+  shape = 15, stroke = 0, size = data_points$size),
+  sigma = 25)
+p <- p + scale_colour_identity()
+p <- p + theme_void()
+
+# Export to PNG
+ggsave(
+  here::here("img/offcuts/20220102_offcut04.png"),
+  last_plot(), width = 9, height = 6, units = "in", dpi = 600)
+
+# Offcut 05 --------------------------------------------------------------------
+
+# Load libraries
+# library(dplyr)
+# library(ggfx)
+# library(ggplot2)
+
+# Set colours
+colour_vector <- c(
+  "#FFCDB2",
+  "#FFB4A2",
+  "#E5989B",
+  "#B5838D",
+  "#6D6875")
+
+# Create the data
+set.seed(157)
+data_points <- tibble(
+  x = runif(20, min=0, max=1),
+  y = 1,
+  colour = sample(colour_vector, 20, replace = TRUE),
+  size = 150)
+
+# Build the plot
+p <- ggplot()
+p <- p + ggfx::with_bloom(
+  geom_point(
+    data = data_points, aes(x = x, y = y, colour = colour),
+    shape = 15, stroke = 0, size = data_points$size),
+  sigma = 25)
+p <- p + scale_colour_identity()
+p <- p + theme_void()
+
+# Export to PNG
+ggsave(
+  here::here("img/offcuts/20220102_offcut05.png"),
+  last_plot(), width = 9, height = 6, units = "in", dpi = 600)
+
+# Offcut 06 --------------------------------------------------------------------
+
+# Load libraries
+# library(dplyr)
+# library(ggfx)
+# library(ggplot2)
+
+# Set colours
+colour_vector <- c(
+  "#FFCDB2",
+  "#FFB4A2",
+  "#E5989B",
+  "#B5838D",
+  "#6D6875")
+
+# Create the data
+num_records = 100 # set to a multiple of 5
+set.seed(74872)
+data_points <- tibble(
+  x = runif(num_records, min=0, max=1),
+  y = runif(num_records, min=0, max=1),
+  colour = sample(colour_vector, num_records, replace = TRUE),
+  size = runif(num_records, min=30, max=125)) %>%
+  mutate(numeric_marker = rep(1:5, times = num_records / 5)) %>%
+  # Delete every third record
+  filter(numeric_marker != 3) %>%
+  select(-numeric_marker)
+
+# Build the plot
+p <- ggplot()
+p <- p + ggfx::with_bloom(
+  geom_point(
+    data = data_points, aes(x = x, y = y, colour = colour),
+    shape = 15, stroke = 0, size = data_points$size),
+  sigma = 25)
+p <- p + scale_colour_identity()
+p <- p + theme_void()
+
+# Export to PNG
+ggsave(
+  here::here("img/offcuts/20220102_offcut06.png"),
   last_plot(), width = 9, height = 6, units = "in", dpi = 600)
