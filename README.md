@@ -2,6 +2,12 @@
 
 Generative art made in R for Genuary 2022: http://genuary.art/
 
+## My pieces
+
+Up to Day 4:
+
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated.png)
+
 ## Notable inspirations and new skills
 
 | Day | Links | Credit |
