@@ -355,7 +355,7 @@ p <- p + geom_segment(
 # Topside
 p <- p + geom_point(
   data = regon_seed1_nudged, aes(x = x, y = y_nudged),
-  size = 0.8, color = "#f4f4f4", linetype = 3333)
+  size = 0.2, color = "#f4f4f4", linetype = 3333)
 # Plot titles and theming
 p <- p + labs(
   title = "Sift",
