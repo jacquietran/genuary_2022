@@ -631,3 +631,447 @@ ggsave(
   here::here("img/offcuts/20220106_offcut09.png"),
   last_plot(), width = 8, height = 8, units = "cm",
   device = "png", type = "cairo")
+
+# Offcut 10 --------------------------------------------------------------------
+
+# Create data
+seed_num <- 4871453
+
+dat <- scrawl_build(
+  seed = seed_num, n_paths = 1000, n_steps = 600, sz_step = 4, sz_slip = 4)
+
+set.seed(seed_num)
+dat_mod <- dat %>%
+  # Different point sizes for different "pen tip widths"
+  mutate(
+    remainder = path_id %% 4,
+    point_size = case_when(
+      remainder == 0 ~ 0.2,
+      remainder == 1 ~ 0.3,
+      remainder == 2 ~ 0.27,
+      TRUE           ~ 0.2)) %>%
+  select(-remainder) %>%
+  # Remove observations outside the "square"
+  filter(x >= 0 & x < 2) %>%
+  filter(y >= 0 & y < 2) %>%
+  # Pseudo-random filtering of observations
+  filter(path_id %% 8 == 0)
+
+# For drawing a "square" around the plot
+# Data for square - top length
+set.seed(seed_num)
+dat_square_top <- tibble(
+  x = seq(0, 1.99, by = 0.01), xend = seq(0.01, 2, by = 0.01),
+  y = 2, yend = 2) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - right length
+set.seed(seed_num)
+dat_square_right <- tibble(
+  x = 2, xend = 2,
+  y = seq(0, 1.99, by = 0.01), yend = seq(0.01, 2, by = 0.01)) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - bottom length
+set.seed(seed_num)
+dat_square_bottom <- tibble(
+  x = seq(0, 1.99, by = 0.01), xend = seq(0.01, 2, by = 0.01),
+  y = 0, yend = 0) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - left length
+set.seed(seed_num)
+dat_square_left <- tibble(
+  x = 0, xend = 0,
+  y = seq(0, 1.99, by = 0.01), yend = seq(0.01, 2, by = 0.01)) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Build plot
+p <- ggplot(dat_mod, aes(x = x, y = y))
+p <- p + geom_point(aes(size = point_size), alpha = 0.3, shape = 16, stroke = 0)
+p <- p + scale_size_identity()
+# Draw square - top length
+p <- p + geom_segment(
+  data = dat_square_top,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - right length
+p <- p + geom_segment(
+  data = dat_square_right,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - bottom length
+p <- p + geom_segment(
+  data = dat_square_bottom,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - left length
+p <- p + geom_segment(
+  data = dat_square_left,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+p <- p + theme_void()
+p <- p + coord_equal()
+p <- p + theme(
+  legend.position = "none",
+  plot.background = element_rect(fill = "#e9e3d5", colour = "#e9e3d5"),
+  plot.margin = margin(10, 10, 10, 10, unit = "pt"))
+
+# Export to file
+ggsave(
+  here::here("img/offcuts/20220106_offcut10.png"),
+  last_plot(), width = 8, height = 8, units = "cm",
+  device = "png", type = "cairo")
+
+# Offcut 11 --------------------------------------------------------------------
+
+# Create data
+seed_num <- 40285
+
+dat <- scrawl_build(
+  seed = seed_num, n_paths = 1000, n_steps = 600, sz_step = 14, sz_slip = 4)
+
+set.seed(seed_num)
+dat_mod <- dat %>%
+  # Different point sizes for different "pen tip widths"
+  mutate(
+    remainder = path_id %% 4,
+    point_size = case_when(
+      remainder == 0 ~ 0.2,
+      remainder == 1 ~ 0.3,
+      remainder == 2 ~ 0.27,
+      TRUE           ~ 0.2)) %>%
+  select(-remainder) %>%
+  # Remove observations outside the "square"
+  filter(x >= 0 & x < 2) %>%
+  filter(y >= 0 & y < 2) %>%
+  # Pseudo-random filtering of observations
+  filter(path_id %% 8 == 0)
+
+# For drawing a "square" around the plot
+# Data for square - top length
+set.seed(seed_num)
+dat_square_top <- tibble(
+  x = seq(0, 1.99, by = 0.01), xend = seq(0.01, 2, by = 0.01),
+  y = 2, yend = 2) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - right length
+set.seed(seed_num)
+dat_square_right <- tibble(
+  x = 2, xend = 2,
+  y = seq(0, 1.99, by = 0.01), yend = seq(0.01, 2, by = 0.01)) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - bottom length
+set.seed(seed_num)
+dat_square_bottom <- tibble(
+  x = seq(0, 1.99, by = 0.01), xend = seq(0.01, 2, by = 0.01),
+  y = 0, yend = 0) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - left length
+set.seed(seed_num)
+dat_square_left <- tibble(
+  x = 0, xend = 0,
+  y = seq(0, 1.99, by = 0.01), yend = seq(0.01, 2, by = 0.01)) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Build plot
+p <- ggplot(dat_mod, aes(x = x, y = y))
+p <- p + geom_point(aes(size = point_size), alpha = 0.3, shape = 16, stroke = 0)
+p <- p + scale_size_identity()
+# Draw square - top length
+p <- p + geom_segment(
+  data = dat_square_top,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - right length
+p <- p + geom_segment(
+  data = dat_square_right,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - bottom length
+p <- p + geom_segment(
+  data = dat_square_bottom,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - left length
+p <- p + geom_segment(
+  data = dat_square_left,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+p <- p + theme_void()
+p <- p + coord_equal()
+p <- p + theme(
+  legend.position = "none",
+  plot.background = element_rect(fill = "#e9e3d5", colour = "#e9e3d5"),
+  plot.margin = margin(10, 10, 10, 10, unit = "pt"))
+
+# Export to file
+ggsave(
+  here::here("img/offcuts/20220106_offcut11.png"),
+  last_plot(), width = 8, height = 8, units = "cm",
+  device = "png", type = "cairo")
+
+# Offcut 12 --------------------------------------------------------------------
+
+# Create data
+seed_num <- 369457
+
+dat <- scrawl_build(
+  seed = seed_num, n_paths = 1000, n_steps = 600, sz_step = 14, sz_slip = 4)
+
+set.seed(seed_num)
+dat_mod <- dat %>%
+  # Different point sizes for different "pen tip widths"
+  mutate(
+    remainder = path_id %% 4,
+    point_size = case_when(
+      remainder == 0 ~ 0.2,
+      remainder == 1 ~ 0.3,
+      remainder == 2 ~ 0.27,
+      TRUE           ~ 0.2)) %>%
+  select(-remainder) %>%
+  # Remove observations outside the "square"
+  filter(x >= 0 & x < 2) %>%
+  filter(y >= 0 & y < 2) %>%
+  # Pseudo-random filtering of observations
+  filter(path_id %% 8 == 0)
+
+# For drawing a "square" around the plot
+# Data for square - top length
+set.seed(seed_num)
+dat_square_top <- tibble(
+  x = seq(0, 1.99, by = 0.01), xend = seq(0.01, 2, by = 0.01),
+  y = 2, yend = 2) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - right length
+set.seed(seed_num)
+dat_square_right <- tibble(
+  x = 2, xend = 2,
+  y = seq(0, 1.99, by = 0.01), yend = seq(0.01, 2, by = 0.01)) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - bottom length
+set.seed(seed_num)
+dat_square_bottom <- tibble(
+  x = seq(0, 1.99, by = 0.01), xend = seq(0.01, 2, by = 0.01),
+  y = 0, yend = 0) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - left length
+set.seed(seed_num)
+dat_square_left <- tibble(
+  x = 0, xend = 0,
+  y = seq(0, 1.99, by = 0.01), yend = seq(0.01, 2, by = 0.01)) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Build plot
+p <- ggplot(dat_mod, aes(x = x, y = y))
+p <- p + geom_point(aes(size = point_size), alpha = 0.3, shape = 16, stroke = 0)
+p <- p + scale_size_identity()
+# Draw square - top length
+p <- p + geom_segment(
+  data = dat_square_top,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - right length
+p <- p + geom_segment(
+  data = dat_square_right,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - bottom length
+p <- p + geom_segment(
+  data = dat_square_bottom,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - left length
+p <- p + geom_segment(
+  data = dat_square_left,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+p <- p + theme_void()
+p <- p + coord_equal()
+p <- p + theme(
+  legend.position = "none",
+  plot.background = element_rect(fill = "#e9e3d5", colour = "#e9e3d5"),
+  plot.margin = margin(10, 10, 10, 10, unit = "pt"))
+
+# Export to file
+ggsave(
+  here::here("img/offcuts/20220106_offcut12.png"),
+  last_plot(), width = 8, height = 8, units = "cm",
+  device = "png", type = "cairo")
+
+# Offcut 13 --------------------------------------------------------------------
+
+# Create data
+seed_num <- 3
+
+dat <- scrawl_build(
+  seed = seed_num, n_paths = 1000, n_steps = 600, sz_step = 14, sz_slip = 4)
+
+set.seed(seed_num)
+dat_mod <- dat %>%
+  # Different point sizes for different "pen tip widths"
+  mutate(
+    remainder = path_id %% 4,
+    point_size = case_when(
+      remainder == 0 ~ 0.4,
+      remainder == 1 ~ 0.6,
+      remainder == 2 ~ 0.54,
+      TRUE           ~ 0.4)) %>%
+  select(-remainder) %>%
+  # Remove observations outside the "square"
+  filter(x >= 0 & x < 2) %>%
+  filter(y >= 0 & y < 2) %>%
+  # Pseudo-random filtering of observations
+  filter(path_id %% 8 == 0)
+
+# For drawing a "square" around the plot
+# Data for square - top length
+set.seed(seed_num)
+dat_square_top <- tibble(
+  x = seq(0, 1.99, by = 0.01), xend = seq(0.01, 2, by = 0.01),
+  y = 2, yend = 2) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - right length
+set.seed(seed_num)
+dat_square_right <- tibble(
+  x = 2, xend = 2,
+  y = seq(0, 1.99, by = 0.01), yend = seq(0.01, 2, by = 0.01)) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - bottom length
+set.seed(seed_num)
+dat_square_bottom <- tibble(
+  x = seq(0, 1.99, by = 0.01), xend = seq(0.01, 2, by = 0.01),
+  y = 0, yend = 0) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Data for square - left length
+set.seed(seed_num)
+dat_square_left <- tibble(
+  x = 0, xend = 0,
+  y = seq(0, 1.99, by = 0.01), yend = seq(0.01, 2, by = 0.01)) %>%
+  # Pseudo-random deletion
+  mutate(
+    to_delete = sample(
+      c(rep("yes", 1), rep("no", 6)),
+      n(), replace = TRUE)) %>%
+  filter(to_delete == "no") %>%
+  select(-to_delete)
+
+# Build plot
+p <- ggplot(dat_mod, aes(x = x, y = y))
+p <- p + geom_point(aes(size = point_size), alpha = 0.3, shape = 16, stroke = 0)
+p <- p + scale_size_identity()
+# Draw square - top length
+p <- p + geom_segment(
+  data = dat_square_top,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - right length
+p <- p + geom_segment(
+  data = dat_square_right,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - bottom length
+p <- p + geom_segment(
+  data = dat_square_bottom,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+# Draw square - left length
+p <- p + geom_segment(
+  data = dat_square_left,
+  aes(x = x, xend = xend, y = y, yend = yend, size = 0.25))
+p <- p + theme_void()
+p <- p + coord_equal()
+p <- p + theme(
+  legend.position = "none",
+  plot.background = element_rect(fill = "#e9e3d5", colour = "#e9e3d5"),
+  plot.margin = margin(10, 10, 10, 10, unit = "pt"))
+
+# Export to file
+ggsave(
+  here::here("img/offcuts/20220106_offcut13.png"),
+  last_plot(), width = 8, height = 8, units = "cm",
+  device = "png", type = "cairo")
