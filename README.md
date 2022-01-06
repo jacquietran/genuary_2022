@@ -20,3 +20,5 @@ Up to Day 7:
 | 05 | ["Disintegration"](https://www.williamrchase.com/post/disintegration-12-months-of-art-october/) | [Will Chase](https://twitter.com/W_R_Chase) |
 | 06 | Matt DesLauriers' pieces for #genuary2022 Day 4: https://twitter.com/mattdesl/status/1478322540435103749 | [Matt DesLauriers](https://twitter.com/mattdesl) |
 |    | `scrawl` package for drawing scrawly lines: https://github.com/djnavarro/scrawl | [Danielle Navarro](https://twitter.com/djnavarro) |
+| 07 | [Wall Drawing #381, 1982](https://www.artsy.net/artwork/sol-lewitt-wall-drawing-number-381?utm_source=pocket_mylist) | Sol LeWitt |
+|    | Delaunay triangles using the `ggforce` package: https://ggforce.data-imaginist.com/reference/geom_delvor.html | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
