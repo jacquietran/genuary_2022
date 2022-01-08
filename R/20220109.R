@@ -208,7 +208,7 @@ font_add_google("Cairo", "cairo")
 showtext_auto()
 
 p <- ggplot() +
-  # Left structure - background colour
+  # Left structure - base colour
   geom_delaunay_tile(
     data = dots_left,
     aes(x = x, y = y, group = -1L),
@@ -227,7 +227,7 @@ p <- ggplot() +
   geom_delaunay_segment2(
     data = dots_left,
     aes(x = x, y = y, group = -1L), colour = "#343437", lineend = "round") +
-  # Right structure - background colour
+  # Right structure - base colour
   geom_delaunay_tile(
     data = dots_right,
     aes(x = x, y = y, group = -1L),
