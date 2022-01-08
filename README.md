@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 7:
+Up to Day 8:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day07.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day08.png)
 
 ## Notable inspirations and new skills
 
@@ -22,3 +22,4 @@ Up to Day 7:
 |    | `scrawl` package for drawing scrawly lines: https://github.com/djnavarro/scrawl | [Danielle Navarro](https://twitter.com/djnavarro) |
 | 07 | [Wall Drawing #381, 1982](https://www.artsy.net/artwork/sol-lewitt-wall-drawing-number-381?utm_source=pocket_mylist) | Sol LeWitt |
 |    | Delaunay triangles using the `ggforce` package: https://ggforce.data-imaginist.com/reference/geom_delvor.html | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
+| 08 | Bezier curves using `ggforce` | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
