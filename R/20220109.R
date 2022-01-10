@@ -260,7 +260,7 @@ p <- ggplot() +
     caption = "@jacquietran") +
   theme_void() +
   theme(
-    text = element_text(family = "", colour = "#4c4c50"),
+    text = element_text(family = "cairo", colour = "#4c4c50"),
     plot.title = element_text(
       size = rel(14), margin = margin(0,0,5,0, unit = "pt")),
     plot.subtitle = element_text(
