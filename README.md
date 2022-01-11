@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 10:
+Up to Day 11:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day10.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day11.png)
 
 ## Notable inspirations and new skills
 
@@ -25,4 +25,5 @@ Up to Day 10:
 | 08 | Bezier curves using `ggforce` | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
 | 09 | Federation Square, Melbourne | [Lab & Bates Smart](https://fedsquare.com/history-design) |
 | 10 | Generating noise using the `ambient` package: https://ambient.data-imaginist.com | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
-|    | Bump charts using the `ggbump` package: https://github.com/davidsjoberg/ggbump | [David Sjöberg](https://twitter.com/davsjob)
+|    | Bump charts using the `ggbump` package: https://github.com/davidsjoberg/ggbump | [David Sjöberg](https://twitter.com/davsjob) |
+| 11 | Ed Emberley's [drawing books](https://austinkleon.com/2009/11/21/ed-emberleys-make-a-world/) | [Ed Emberley](https://www.youtube.com/watch?v=gRWXyOsui54) |
