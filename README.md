@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 13:
+Up to Day 14:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day13.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day14.png)
 
 ## Notable inspirations and new skills
 
@@ -18,14 +18,18 @@ Up to Day 13:
 | 04 | `ggplot2` geoms with pattern fills using `ggpattern`: https://github.com/coolbutuseless/ggpattern/ | [Mike FC](https://twitter.com/coolbutuseless) |
 |    | `camcorder` package for recording the `ggplot2` plot creation process: https://github.com/thebioengineer/camcorder/ | [Ellis Hughes](https://twitter.com/ellis_hughes) |
 | 05 | ["Disintegration"](https://www.williamrchase.com/post/disintegration-12-months-of-art-october/) | [Will Chase](https://twitter.com/W_R_Chase) |
-| 06 | Matt DesLauriers' pieces for #genuary2022 Day 4: https://twitter.com/mattdesl/status/1478322540435103749 | [Matt DesLauriers](https://twitter.com/mattdesl) |
+| 06 | [Matt DesLauriers' pieces for #genuary2022 Day 4](https://twitter.com/mattdesl/status/1478322540435103749) | [Matt DesLauriers](https://twitter.com/mattdesl) |
 |    | `scrawl` package for drawing scrawly lines: https://github.com/djnavarro/scrawl | [Danielle Navarro](https://twitter.com/djnavarro) |
 | 07 | [Wall Drawing #381, 1982](https://www.artsy.net/artwork/sol-lewitt-wall-drawing-number-381?utm_source=pocket_mylist) | Sol LeWitt |
 |    | Delaunay triangles using the `ggforce` package: https://ggforce.data-imaginist.com/reference/geom_delvor.html | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
-| 08 | Bezier curves using `ggforce` | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
+| 08 | Bezier curves using `ggforce`: https://ggforce.data-imaginist.com/reference/geom_bezier.html | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
 | 09 | Federation Square, Melbourne | [Lab & Bates Smart](https://fedsquare.com/history-design) |
 | 10 | Generating noise using the `ambient` package: https://ambient.data-imaginist.com | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
 |    | Bump charts using the `ggbump` package: https://github.com/davidsjoberg/ggbump | [David Sjöberg](https://twitter.com/davsjob) |
 | 11 | Ed Emberley's [drawing books](https://austinkleon.com/2009/11/21/ed-emberleys-make-a-world/) | [Ed Emberley](https://www.youtube.com/watch?v=gRWXyOsui54) |
-| 12 | Rhombille and trihexagonal tiling: https://en.wikipedia.org/wiki/File:P3_dual.png | Wikipedia user TED-43 } |
-|    | Rhombus calculator: https://areavolumecalculator.com/rhombus-calculator/ | |
+| 12 | [Rhombille and trihexagonal tiling](https://en.wikipedia.org/wiki/File:P3_dual.png) | Wikipedia user TED-43 } |
+|    | [Rhombus calculator](https://areavolumecalculator.com/rhombus-calculator/) | |
+| 13 | `rayshader` for mapping elevation data with raytracing: https://www.rayshader.com | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
+|    | [Elvis Elevation and Depth](https://elevation.fsdf.org.au/) - Australian elevation and bathymetry data | |
+|    | Blog post: ["I can rayshade, and so can you"](https://wcmbishop.github.io/rayshader-demo/?utm_source=pocket_mylist) | [Will Bishop](https://twitter.com/wcmbishop) |
+|    | [Tutorial: Adding Open Street Map data to rayshader maps in R](https://www.tylermw.com/adding-open-street-map-data-to-rayshader-maps-in-r/) | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
