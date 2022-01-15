@@ -27,7 +27,7 @@ melb_resized <- resize_matrix(melb_mat, 0.15)
 melb_resized_water <- melb_resized
 melb_resized_water[melb_resized_water < 0] = 0
 
-# Build plot -------------------------------------------------------------------
+# Make map ---------------------------------------------------------------------
 
 # Prototype
 melb_small %>% 
@@ -39,7 +39,6 @@ melb_small %>%
     0.1) %>%
   add_water(detect_water(melb_small_water), color = "#232323") %>%
   plot_map()
-  
 
 # The real deal
 melb_resized %>% 
