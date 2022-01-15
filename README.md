@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 14:
+Up to Day 15:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day14.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day15.png)
 
 ## Notable inspirations and new skills
 
@@ -29,7 +29,9 @@ Up to Day 14:
 | 11 | Ed Emberley's [drawing books](https://austinkleon.com/2009/11/21/ed-emberleys-make-a-world/) | [Ed Emberley](https://www.youtube.com/watch?v=gRWXyOsui54) |
 | 12 | [Rhombille and trihexagonal tiling](https://en.wikipedia.org/wiki/File:P3_dual.png) | Wikipedia user TED-43 } |
 |    | [Rhombus calculator](https://areavolumecalculator.com/rhombus-calculator/) | |
-| 13 | `rayshader` for mapping elevation data with raytracing: https://www.rayshader.com | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
+| 13 | `gganimate` package: https://gganimate.com/ | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
+| 14 | `rayshader` for mapping elevation data with raytracing: https://www.rayshader.com | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
 |    | [Elvis Elevation and Depth](https://elevation.fsdf.org.au/) - Australian elevation and bathymetry data | |
 |    | Blog post: ["I can rayshade, and so can you"](https://wcmbishop.github.io/rayshader-demo/?utm_source=pocket_mylist) | [Will Bishop](https://twitter.com/wcmbishop) |
 |    | [Tutorial: Adding Open Street Map data to rayshader maps in R](https://www.tylermw.com/adding-open-street-map-data-to-rayshader-maps-in-r/) | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
+| 15 | [A step-by-step guide to making 3D maps with satellite imagery in R](https://www.tylermw.com/a-step-by-step-guide-to-making-3d-maps-with-satellite-imagery-in-r/) | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
