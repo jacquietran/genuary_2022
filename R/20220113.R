@@ -82,6 +82,6 @@ p <- ggplot() +
     legend.position = "none")
 
 ggsave(
-  here::here("img/20220113.png"),
+  here::here("img/ingredients/20220113.png"),
   last_plot(),
   width = 6, height = 6, units = "cm")
