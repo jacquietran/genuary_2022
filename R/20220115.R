@@ -93,7 +93,7 @@ munga_thirri_rgb_contrast %>%
     texture_shade(
       munga_thirri_el_matrix, detail = 8/10, contrast = 9, brightness = 11),
     0.1) %>%
-  save_png(filename = here::here("img/20220115_map_only.png"))
+  save_png(filename = here::here("img/ingredients/20220115_map_only.png"))
 
 # Shift to {ggplot2} workflow --------------------------------------------------
 
@@ -108,7 +108,7 @@ font_add_google("Yeseva One", "yeseva")
 showtext_auto()
 
 # Import map image
-map <- readPNG(here::here("img/20220115_map_only.png"))
+map <- readPNG(here::here("img/ingredients/20220115_map_only.png"))
 map_raster <- rasterGrob(map, width = unit(1,"npc"), height = unit(1,"npc"))
 
 p <- ggplot() +
