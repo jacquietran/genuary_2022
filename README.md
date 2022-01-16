@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 15:
+Up to Day 16:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day15.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day16.png)
 
 ## Notable inspirations and new skills
 
@@ -35,3 +35,4 @@ Up to Day 15:
 |    | Blog post: ["I can rayshade, and so can you"](https://wcmbishop.github.io/rayshader-demo/?utm_source=pocket_mylist) | [Will Bishop](https://twitter.com/wcmbishop) |
 |    | [Tutorial: Adding Open Street Map data to rayshader maps in R](https://www.tylermw.com/adding-open-street-map-data-to-rayshader-maps-in-r/) | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
 | 15 | [A step-by-step guide to making 3D maps with satellite imagery in R](https://www.tylermw.com/a-step-by-step-guide-to-making-3d-maps-with-satellite-imagery-in-r/) | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
+| 16 | [Making glitch art in R](https://www.petejon.es/posts/2020-03-09-glitch-art-in-r/) | [Pete Jones](https://twitter.com/pj_mcr) |
