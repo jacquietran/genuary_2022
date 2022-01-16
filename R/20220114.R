@@ -48,7 +48,7 @@ melb_resized %>%
     texture_shade(melb_resized, detail = 8/10, contrast = 9, brightness = 15),
     0.1) %>%
   add_water(detect_water(melb_resized_water), color = "#232323") %>%
-  save_png(filename = here::here("img/20220114_map_only.png"))
+  save_png(filename = here::here("img/ingredients/20220114_map_only.png"))
 
 # Shift to {ggplot2} workflow --------------------------------------------------
 
@@ -57,7 +57,7 @@ font_add_google("Overpass", "overpass")
 showtext_auto()
 
 # Import paper texture image
-map <- readPNG(here::here("img/20220114_map_only.png"))
+map <- readPNG(here::here("img/ingredients/20220114_map_only.png"))
 map_raster <- rasterGrob(map, width = unit(1,"npc"), height = unit(1,"npc"))
 
 p <- ggplot() +
