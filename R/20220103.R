@@ -67,7 +67,7 @@ p <- p + theme(
 
 # Export plot to PNG
 ggsave(
-  here::here("img/20220103_plot_only.png"),
+  here::here("img/ingredients/20220103_plot_only.png"),
   last_plot(), device = "png",
   width = 6, height = 6, units = "in", dpi = 600)
 
@@ -77,7 +77,7 @@ showtext_auto(FALSE)
 
 # read in the image and convert to greyscale
 img <- readImage(
-  here::here("img/20220103_plot_only.png"))
+  here::here("img/ingredients/20220103_plot_only.png"))
 gray <- channel(img, "gray")
 
 img_col <- colormap(
