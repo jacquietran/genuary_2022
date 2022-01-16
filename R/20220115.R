@@ -107,12 +107,12 @@ library(png)
 font_add_google("Yeseva One", "yeseva")
 showtext_auto()
 
-# Import paper texture image
+# Import map image
 map <- readPNG(here::here("img/20220115_map_only.png"))
 map_raster <- rasterGrob(map, width = unit(1,"npc"), height = unit(1,"npc"))
 
 p <- ggplot() +
-  # Paper texture background
+  # Map image
   annotation_custom(map_raster, -Inf, Inf, -Inf, Inf) +
   # Plot titles and theming
   labs(
