@@ -114,7 +114,7 @@ p <- ggplot() +
     plot.margin = margin(-2, -2, -2, -2, unit = "cm"))
 
 ggsave(
-  here::here("img/20220116_gradients_only.jpg"),
+  here::here("img/ingredients/20220116_gradients_only.jpg"),
   last_plot(), width = 8, height = 10, units = "cm", dpi = 600)
 
 # Glitchin' hour ---------------------------------------------------------------
@@ -143,7 +143,7 @@ glitch_far2 <- function(input_data, n_changes = 5, tune = 100) {
 
 # Read in the gradients image as a data file
 grad_data <- readr::read_file_raw(
-  here::here("img/20220116_gradient_only.jpg"))
+  here::here("img/ingredients/20220116_gradient_only.jpg"))
 
 # Might glitch me once
 set.seed(543)
@@ -167,7 +167,7 @@ img_appended <- magick::image_append(
 # Save appended image
 magick::image_write(
   img_appended,
-  path = here::here("img/20220116_with_glitches.png"),
+  path = here::here("img/ingredients/20220116_with_glitches.png"),
   format = "png")
 
 # Shift to {ggplot2} workflow --------------------------------------------------
@@ -177,7 +177,8 @@ font_add_google("Bai Jamjuree", "baijam")
 showtext_auto()
 
 # Import appended image of glitchy gradients
-glitchy_grad <- readPNG(here::here("img/20220116_with_glitches.png"))
+glitchy_grad <- readPNG(
+  here::here("img/ingredients/20220116_with_glitches.png"))
 glitchy_grad_raster <- rasterGrob(
   glitchy_grad, width = unit(1,"npc"), height = unit(1,"npc"))
 
