@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 18:
+Up to Day 19:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day18.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day19.png)
 
 ## Notable inspirations and new skills
 
@@ -32,8 +32,10 @@ Up to Day 18:
 | 13 | `gganimate` package: https://gganimate.com/ | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
 | 14 | `rayshader` for mapping elevation data with raytracing: https://www.rayshader.com | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
 |    | [Elvis Elevation and Depth](https://elevation.fsdf.org.au/) - Australian elevation and bathymetry data | |
-|    | Blog post: ["I can rayshade, and so can you"](https://wcmbishop.github.io/rayshader-demo/?utm_source=pocket_mylist) | [Will Bishop](https://twitter.com/wcmbishop) |
+|    | Blog post: [I can rayshade, and so can you](https://wcmbishop.github.io/rayshader-demo/?utm_source=pocket_mylist) | [Will Bishop](https://twitter.com/wcmbishop) |
 |    | [Tutorial: Adding Open Street Map data to rayshader maps in R](https://www.tylermw.com/adding-open-street-map-data-to-rayshader-maps-in-r/) | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
 | 15 | [A step-by-step guide to making 3D maps with satellite imagery in R](https://www.tylermw.com/a-step-by-step-guide-to-making-3d-maps-with-satellite-imagery-in-r/) | [Tyler Morgan-Wall](https://twitter.com/tylermorganwall) |
 | 16 | [Making glitch art in R](https://www.petejon.es/posts/2020-03-09-glitch-art-in-r/) | [Pete Jones](https://twitter.com/pj_mcr) |
 | 18 | [SMPTE colour bars](https://en.wikipedia.org/wiki/Test_card) | Wikipedia |
+| 19 | `geomtextpath` for making curved text paths in `ggplot2`: https://github.com/AllanCameron/geomtextpath | [Allan Cameron](https://twitter.com/Dr_AllanCameron) |
+|    | [20 Vintage Posters of Rock ’N Roll and R&B Concerts in the 1950s and ’60s](https://www.vintag.es/2020/05/vintage-music-posters.html) | [Vintage Everyday](https://www.vintag.es)
