@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 19:
+Up to Day 20:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day19.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day20.png)
 
 ## Notable inspirations and new skills
 
@@ -38,4 +38,5 @@ Up to Day 19:
 | 16 | [Making glitch art in R](https://www.petejon.es/posts/2020-03-09-glitch-art-in-r/) | [Pete Jones](https://twitter.com/pj_mcr) |
 | 18 | [SMPTE colour bars](https://en.wikipedia.org/wiki/Test_card) | Wikipedia |
 | 19 | `geomtextpath` for making curved text paths in `ggplot2`: https://github.com/AllanCameron/geomtextpath | [Allan Cameron](https://twitter.com/Dr_AllanCameron) |
-|    | [20 Vintage Posters of Rock ’N Roll and R&B Concerts in the 1950s and ’60s](https://www.vintag.es/2020/05/vintage-music-posters.html) | [Vintage Everyday](https://www.vintag.es)
+|    | [20 Vintage Posters of Rock ’N Roll and R&B Concerts in the 1950s and ’60s](https://www.vintag.es/2020/05/vintage-music-posters.html) | [Vintage Everyday](https://www.vintag.es) |
+| 20 | ["Ocean waves"](https://commons.wikimedia.org/wiki/File:Hokusai_1760-1849_Ocean_waves.jpg) | [Katsushika Hokusai](https://en.wikipedia.org/wiki/Hokusai) |
