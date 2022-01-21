@@ -39,4 +39,4 @@ Up to Day 20:
 | 18 | [SMPTE colour bars](https://en.wikipedia.org/wiki/Test_card) | Wikipedia |
 | 19 | `geomtextpath` for making curved text paths in `ggplot2`: https://github.com/AllanCameron/geomtextpath | [Allan Cameron](https://twitter.com/Dr_AllanCameron) |
 |    | [20 Vintage Posters of Rock ’N Roll and R&B Concerts in the 1950s and ’60s](https://www.vintag.es/2020/05/vintage-music-posters.html) | [Vintage Everyday](https://www.vintag.es) |
-| 20 | ["Ocean waves"](https://commons.wikimedia.org/wiki/File:Hokusai_1760-1849_Ocean_waves.jpg) | [Katsushika Hokusai](https://en.wikipedia.org/wiki/Hokusai) |
+| 20 | ["Chôshi in Shimôsa Province"](https://commons.wikimedia.org/wiki/File:Hokusai_1760-1849_Ocean_waves.jpg) | [Katsushika Hokusai](https://en.wikipedia.org/wiki/Hokusai) |
