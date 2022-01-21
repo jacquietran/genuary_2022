@@ -14,7 +14,7 @@ gg_record(
   width = 12, # width of saved image
   height = 8, # height of saved image
   units = "cm", # units for width and height
-  dpi = 600 # dpi to use when saving image
+  dpi = 400 # dpi to use when saving image
 )
 
 # Define custom function -------------------------------------------------------
@@ -296,7 +296,7 @@ gg_playback(
   name = file.path(
     here::here("img"), "20220120_camcorder", "day20_gif.gif"),
   first_image_duration = 0.25,
-  last_image_duration = 10,
+  last_image_duration = 15,
   frame_duration = 0.25)
 
 # Export final plot to file ----------------------------------------------------
