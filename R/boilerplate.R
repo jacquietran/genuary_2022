@@ -9,12 +9,12 @@ library(ggplot2)
 
 gg_record(
   dir = file.path(
-    here::here("img"), "20220110_camcorder"), # where to save the recording
+    here::here("img"), "202201XX_camcorder"), # where to save the recording
   device = "png", # device to use to save images
   width = 12, # width of saved image
   height = 8, # height of saved image
   units = "cm", # units for width and height
-  dpi = 600 # dpi to use when saving image
+  dpi = 300 # dpi to use when saving image
 )
 
 # Create data ------------------------------------------------------------------
@@ -29,7 +29,7 @@ p <- ggplot() +
 
 gg_playback(
   name = file.path(
-    here::here("img"), "20220110_camcorder", "day10_gif.gif"),
+    here::here("img"), "202201XX_camcorder", "dayXX_gif.gif"),
   first_image_duration = 0.25,
   last_image_duration = 10,
   frame_duration = 0.25)
@@ -44,11 +44,11 @@ p <- ggplot() +
   # Plot titles and theming
   labs(
     title = "",
-    subtitle = "#genuary2022 - Day 10",
+    subtitle = "#genuary2022 - Day XX",
     caption = "@jacquietran") +
   theme_void() +
   theme(
-    text = element_text(family = "", colour = "#4c4c50"),
+    text = element_text(family = "", colour = "#"),
     plot.title = element_text(
       size = rel(14), margin = margin(0,0,5,0, unit = "pt")),
     plot.subtitle = element_text(
@@ -61,7 +61,7 @@ p <- ggplot() +
 # Export final plot to file ----------------------------------------------------
 
 ggsave(
-  here::here("img/20220110.png"),
+  here::here("img/202201XX.png"),
   last_plot(), width = 12, height = 8, units = "cm", dpi = 600)
 
 showtext_auto(FALSE)
