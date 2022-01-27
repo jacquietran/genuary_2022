@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 25:
+Up to Day 26:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day25.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day26.png)
 
 ## Notable inspirations and new skills
 
@@ -41,3 +41,5 @@ Up to Day 25:
 |    | [20 Vintage Posters of Rock ’N Roll and R&B Concerts in the 1950s and ’60s](https://www.vintag.es/2020/05/vintage-music-posters.html) | [Vintage Everyday](https://www.vintag.es) |
 | 20 | ["Chôshi in Shimôsa Province"](https://commons.wikimedia.org/wiki/File:Hokusai_1760-1849_Ocean_waves.jpg) | [Katsushika Hokusai](https://en.wikipedia.org/wiki/Hokusai) |
 | 22 | ["Ratchet" attractors](https://www.williamrchase.com/post/strange-attractors-12-months-of-art-february/) | [Will Chase](https://twitter.com/W_R_Chase) & [Masaru Fujii](https://twitter.com/ozachou_g) |
+| 26 | [Melbourne trams moquette](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/B2-class_Melbourne_tram_interior%2C_2013.JPG/2560px-B2-class_Melbourne_tram_interior%2C_2013.JPG) | Wikipedia |
+|    | Blog post: [How to make a repeat pattern](https://www.designsponge.com/2017/10/welcome-julia-and-how-to-make-a-repeat-pattern.html) | [Julia Rothman](https://www.juliarothman.com/) |
