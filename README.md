@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 26:
+Up to Day 27:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day26.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day27.png)
 
 ## Notable inspirations and new skills
 
@@ -43,3 +43,4 @@ Up to Day 26:
 | 22 | ["Ratchet" attractors](https://www.williamrchase.com/post/strange-attractors-12-months-of-art-february/) | [Will Chase](https://twitter.com/W_R_Chase) & [Masaru Fujii](https://twitter.com/ozachou_g) |
 | 26 | [Melbourne trams moquette](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/B2-class_Melbourne_tram_interior%2C_2013.JPG/2560px-B2-class_Melbourne_tram_interior%2C_2013.JPG) | Wikipedia |
 |    | Blog post: [How to make a repeat pattern](https://www.designsponge.com/2017/10/welcome-julia-and-how-to-make-a-repeat-pattern.html) | [Julia Rothman](https://www.juliarothman.com/) |
+| 27 | Blog post: [Drawing 10 million points with ggplot: Clifford attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) | [Antonio Sánchez Chinchón](https://twitter.com/aschinchon) |
