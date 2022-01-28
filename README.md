@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 27:
+Up to Day 28:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day27.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day28.png)
 
 ## Notable inspirations and new skills
 
@@ -44,3 +44,5 @@ Up to Day 27:
 | 26 | [Melbourne trams moquette](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/B2-class_Melbourne_tram_interior%2C_2013.JPG/2560px-B2-class_Melbourne_tram_interior%2C_2013.JPG) | Wikipedia |
 |    | Blog post: [How to make a repeat pattern](https://www.designsponge.com/2017/10/welcome-julia-and-how-to-make-a-repeat-pattern.html) | [Julia Rothman](https://www.juliarothman.com/) |
 | 27 | Blog post: [Drawing 10 million points with ggplot: Clifford attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) | [Antonio Sánchez Chinchón](https://twitter.com/aschinchon) |
+| 28 | Blog post: [Clustering Frankenstein](https://fronkonstin.com/2019/08/05/clustering-frankenstein/) | [Antonio Sánchez Chinchón](https://twitter.com/aschinchon) |
+|    | Applying morphology methods using the `magick` package: https://cran.r-project.org/web/packages/magick/vignettes/intro.html | [Jeroen Ooms](https://twitter.com/opencpu) |
