@@ -22,11 +22,11 @@ straight_line_jittered <- tibble(
 # Jitter on both axes
 set.seed(seed_num)
 both_axes_jittered <- tibble(
-  x = sample(seq(0, 2, by = 0.02), 1000, replace = TRUE),
-  xend = sample(seq(0, 2, by = 0.02), 1000, replace = TRUE),
-  y = sample(seq(0.9, 1.1, by = 0.02), 1000, replace = TRUE),
-  yend = sample(seq(0.9, 1.1, by = 0.02), 1000, replace = TRUE),
-  linesize = sample(seq(0.05, 0.25, by = 0.05), 1000, replace = TRUE))
+  x = sample(seq(0, 2, by = 0.02), 5000, replace = TRUE),
+  xend = sample(seq(0, 2, by = 0.02), 5000, replace = TRUE),
+  y = sample(seq(0.9, 1.1, by = 0.02), 5000, replace = TRUE),
+  yend = sample(seq(0.9, 1.1, by = 0.02), 5000, replace = TRUE),
+  linesize = sample(seq(0.05, 0.25, by = 0.05), 5000, replace = TRUE))
 
 # Build plot -------------------------------------------------------------------
 
