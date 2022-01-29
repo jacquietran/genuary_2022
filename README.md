@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 29:
+Up to Day 30:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day29.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day30.png)
 
 ## Notable inspirations and new skills
 
