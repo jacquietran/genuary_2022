@@ -4,9 +4,9 @@ Generative art made in R for Genuary 2022: http://genuary.art/
 
 ## My pieces
 
-Up to Day 28:
+Up to Day 29:
 
-![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day28.png)
+![](https://raw.githubusercontent.com/jacquietran/genuary_2022/main/img/genuary2022_collated_to_day29.png)
 
 ## Notable inspirations and new skills
 
@@ -46,3 +46,6 @@ Up to Day 28:
 | 27 | Blog post: [Drawing 10 million points with ggplot: Clifford attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) | [Antonio Sánchez Chinchón](https://twitter.com/aschinchon) |
 | 28 | Blog post: [Clustering Frankenstein](https://fronkonstin.com/2019/08/05/clustering-frankenstein/) | [Antonio Sánchez Chinchón](https://twitter.com/aschinchon) |
 |    | Applying morphology methods using the `magick` package: https://cran.r-project.org/web/packages/magick/vignettes/intro.html | [Jeroen Ooms](https://twitter.com/opencpu) |
+| 29 | [Isometric projection](https://en.wikipedia.org/wiki/Isometric_projection) | Wikipedia |
+|    | [Isometric drawing: A designer's guide](https://www.creativebloq.com/features/isometric-drawing?utm_source=pocket_mylist) | [Sorcha O'Higgins](https://www.creativebloq.com/features/isometric-drawing?utm_source=pocket_mylist) |
+|    | Drawing polygons with rounded corners using the `ggforce` package: https://ggforce.data-imaginist.com/index.html | [Thomas Lin Pedersen](https://twitter.com/thomasp85) |
